@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,700;1,700&family=Roboto:wght@300&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+html{
+	background-color: #111;
+	scroll-behavior: smooth;
+}
+span{
+	color: #f34dc3;
+}
+
+h1{
+	color: #f34dc3;
+    font-family: 'Poppins', sans-serif;
+}

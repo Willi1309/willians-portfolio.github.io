@@ -1,0 +1,90 @@
+.switch {
+	position: relative;
+	width: 60px;
+	height: 25px;
+	border-radius: 25px;
+}
+
+.switch input {
+	appearance: none;
+	width: 60px;
+	height: 25px;
+	border-radius: 25px;
+	background: #fff;
+	outline: none;
+	position: absolute;
+	bottom: -6px;
+	display: flex;
+	cursor: pointer;
+}
+
+.switch input::before,
+.switch input::after {
+	z-index: 2;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	font-weight: bolder;
+	text-align: center;
+}
+
+.switch input::before {
+	content: "en";
+	left: 10px;
+}
+
+.switch input::after {
+	content: "es";
+	right: 10px;
+}
+
+.switch input:checked {
+	background: #f34dc3;
+}
+
+.switch label {
+	z-index: 1;
+	position: absolute;
+	top: 8px;
+	bottom: -4px;
+	border-radius: 20px;
+}
+
+.switch input {
+	transition: 0.25s;
+}
+
+.switch input:checked::after,
+.switch input:checked::before {
+	color: #fff;
+	transition: color 0.5s;
+}
+
+.switch input:checked+label{
+	left: 3px;
+	right: 28px;
+	background: #111;
+	transition: left 0.5s, right 0.4s 0.2s;
+}
+
+.switch input:not(:checked){
+	background: #fff;
+	transition: background 0.4s;
+}
+
+.switch input:not(:checked)::before{
+	color: #111;
+	transition: color 0.5s;
+}
+
+.switch input:not(:checked)::after{
+	color: #fff;
+	transition: color 0.5s 0.2s;
+}
+
+.switch input:not(:checked)+label{
+	left: 30px;
+	right: 5px;
+	background: #f34dc3;
+	transition: left 0.4s 0.2s, right 0.5s, background 0.35s;
+}

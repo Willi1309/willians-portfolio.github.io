@@ -1,0 +1,106 @@
+#presentation{
+	color: #fff;
+	width: 100%;
+  	height: 100vh;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.greeting{
+	color: #fff;
+  	font-family: 'Poppins', sans-serif;
+	font-size: 68px;
+}
+
+.me{
+	font-family: 'Montserrat';
+    font-size: 20px;
+    margin-bottom: 36px;
+}
+
+.download{
+	font-family: 'Montserrat';
+	border-radius: 50px;
+	width: 215px;
+	text-align: center;
+	color: #111;
+	background-color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	text-decoration: none;
+	padding: 22px;
+	transition: all .3s ease-in-out;
+	font-weight: bold;
+	border-style: none;
+}
+
+.download:hover{
+	background-color: #f34dc3;
+	border: 3px solid #fff;
+	color: #fff;
+}
+
+.outstanding{
+	display: block;
+	white-space: nowrap;
+	animation: typing 3s, blink .5s step-end alternate;
+	overflow: hidden;
+}
+
+.contact:hover{
+	box-shadow: 0 0 24px #cce7ff;
+	transition: .1s;
+}
+
+@media (max-width: 1000px){
+	.side1{
+		text-align: center;
+		margin-top: 64px;
+	}
+}
+
+@media (max-width: 968px){
+	#presentation{
+		flex-direction: column;
+	}
+	.side1{
+		text-align: center;
+		margin: 0;
+	}
+	.logo{
+		margin-top: 64px;
+	}
+	.greeting{
+		margin-top: 36px;
+		font-size: 34px;
+	}
+	.me{
+		font-size: 22px;
+	}
+	.greeting, .me{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.download{
+		width: 260px;
+		height: 60px;
+	}
+}
+
+@keyframes typing {
+	from{
+		width: 0;
+	}
+	to{
+		width: 100%;
+	}
+}
+@keyframes blink {
+	50%{
+		border-color: transparent;
+	}
+}

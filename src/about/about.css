@@ -1,0 +1,104 @@
+#about{
+    display: inline-block;
+}
+
+.about-me{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 64px;
+    color: #f34dc3;
+	font-family: 'Poppins', sans-serif;
+}
+
+.me-box{
+    width: 100%;
+    height: 480px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.me-photo{
+    width: 420px;
+    height: 415px;
+}
+.my-photo{
+    border-radius: 100% 0 100% 100%;
+    position: absolute;
+    width: 420px;
+    height: 420px;
+}
+
+.iconCode{
+    position: absolute;
+    display: flex;
+    font-size: 100px;
+    color: #f34dc3;
+    font-weight: 100;
+}
+
+.me-text{
+    width: 60%;
+    height: 480px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.my-description{
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.my-carrer{
+    color: #f34dc3;
+    font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.my-description, .my-carrer{
+    margin-left: 36px;
+}
+
+@media (max-width: 968px){
+    .me-box{
+        width: 100%;
+        display: block;
+    }
+    .about-me{
+        font-size: 48px;
+        padding-bottom: 48px;
+    }
+    .me-photo{
+        margin: auto;
+        width: 280px;
+        height: 267px;
+    }
+    .my-photo{
+        width: 280px;
+        height: 280px;
+    }
+    .iconCode{
+        font-size: 50px;
+    }
+    .me-text{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .my-description, .my-carrer{
+        margin-left: 0;
+        text-align: center;
+    }
+    .my-description{
+        font-size: 20px;
+    }
+    .my-carrer{
+        font-size: 32px;
+        text-align: center;
+    }
+}

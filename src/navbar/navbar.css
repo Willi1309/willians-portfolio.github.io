@@ -1,0 +1,109 @@
+#navbar{
+	height: 40px;
+	width: 100%;
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	z-index: 2;
+}
+
+nav ul li {
+	display: inline-block;
+	margin-inline: 12px;
+}
+
+nav ul li a{
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100px;
+	height: 40px;
+	transition: all 0.3s ease-in-out;
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+li a.active, li a:hover{
+	transition: .5s;
+}
+
+li a:hover{
+	color: #f34dc3;
+	font-weight: bold;
+
+}
+li a.active{
+	color: #f34dc3;
+}
+
+.button-check{
+	font-size: 36px;
+	color: #cce7ff;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+	right: 5%;
+	cursor: pointer;
+	display: none;
+}
+
+#check, .button-check-list{
+	display: none;
+}
+
+.line{
+	width: 100%;
+	height: 3px;
+	background: #f34dc3;
+}
+
+
+@media (max-width: 745px){
+	.button-check{
+		display: block;
+		margin-top: 8px;
+		font-size: 48px;
+	}
+	ul{
+		position: fixed;
+		width: 100%;
+		height: 120%;
+		background: #272829;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+	}
+	nav ul li{
+		display: flex;
+		margin: 50px 0;
+		line-height: 30px;
+		justify-content: center;
+	}
+	nav ul li a{
+		font-size: 20px;
+	}
+	li a.active {
+		left: 0;
+		transition: all .5s;
+	}
+	#check:checked ~ ul{
+		left: 0;
+	}
+	.button-check-list{
+		display: flex;
+		font-size: 38px;
+		align-items: center;
+		justify-content: center;
+		margin-top: 36px;
+	}
+	.line{
+		display: none;
+	}
+	.list-icon{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: #f34dc3;
+	}
+}

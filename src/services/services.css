@@ -1,0 +1,38 @@
+#services{
+	max-width: 95vw;
+	height: 640px;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border-radius: 8px;
+}
+
+.services-tittle{
+	color: #f34dc3;
+	font-family: 'Poppins', sans-serif;
+	font-size: 64px;
+	margin-bottom: 36px;
+}
+.cards{
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+@media (max-width: 1144px){
+	#services{
+		height: 1200px;
+	}
+}
+
+@media (max-width: 793px){
+	#services{
+		height: 1620px;
+	}
+	.services-tittle{
+		font-size: 48px;
+		margin-bottom: 64px;
+	}	
+}

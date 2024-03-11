@@ -1,0 +1,47 @@
+.card, .tittle-cards, .bi-lightbulb{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.card{
+    width: 280px;
+    height: 420px;
+    max-width: 100%;
+    background-color: #272829;
+    margin: 0 48px 64px 48px;
+    box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+    border-radius: 1.5rem;
+}
+
+.card, .tittle-cards{
+    flex-direction: column;
+}
+
+.tittle-cards{
+    color: #f34dc3;
+
+}
+.icon{
+    width: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.tittle-cards, p{
+    padding: 16px;    
+}
+
+.text{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+.subtittle{
+    font-size: 28px;
+}
