@@ -6,16 +6,18 @@
 	text-decoration: none;
 	list-style: none;
 	box-sizing: border-box;
+	--color-principal: #50C4ED;
+	--color-fondo: #272829;
 }
 html{
 	background-color: #111;
 	scroll-behavior: smooth;
 }
 span{
-	color: #f34dc3;
+	color: var(--color-principal);
 }
 
 h1{
-	color: #f34dc3;
+	color: var(--color-principal);
     font-family: 'Poppins', sans-serif;
 }

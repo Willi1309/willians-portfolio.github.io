@@ -7,7 +7,6 @@
     justify-content: center;
     text-align: center;
     font-size: 64px;
-    color: #f34dc3;
 	font-family: 'Poppins', sans-serif;
 }
 
@@ -35,7 +34,7 @@
     position: absolute;
     display: flex;
     font-size: 100px;
-    color: #f34dc3;
+    color: var(--color-principal);
     font-weight: 100;
 }
 
@@ -55,7 +54,7 @@
 }
 
 .my-carrer{
-    color: #f34dc3;
+    color: var(--color-principal);
     font-size: 36px;
     font-family: 'Poppins', sans-serif;
 }

@@ -10,7 +10,7 @@
     width: 280px;
     height: 420px;
     max-width: 100%;
-    background-color: #272829;
+    background-color: var(--color-fondo);
     margin: 0 48px 64px 48px;
     box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
     border-radius: 1.5rem;

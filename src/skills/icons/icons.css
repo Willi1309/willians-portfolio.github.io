@@ -1,6 +1,6 @@
 .icons{
 	display: flex;
-	background-color: #272829;
+	background-color: var(--color-fondo);
 	border-radius: 25px;
 	margin: 18px;
 }
