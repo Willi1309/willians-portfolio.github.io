@@ -18,7 +18,11 @@
 
 }
 
-.frontend, .backend{
+.frontend{
+    margin: 0 28px 28px 28px
+}
+
+.backend{
     margin: 28px;
 }
 

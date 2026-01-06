@@ -1,45 +1,43 @@
-#services{
+#experience{
 	max-width: 95vw;
-	height: 60vh;
-	margin: auto;
+	height: 65vh;
+    margin: auto;
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	flex-direction: column;
+    align-items: center;
+    flex-direction: column;
 	border-radius: 8px;
 }
 
-.services-tittle{
+.experience-title{
 	font-family: 'Poppins', sans-serif;
 	font-size: 64px;
 	margin-bottom: 36px;
 }
-.cards{
-	display: flex;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
+
+.cards-experience{
+    display: grid;
+    grid-template-columns: 1fr;
+
 }
 
 @media (max-width: 1400px){
-	#services{
-		height: 800px;
+	#experience{
+		height: 85vh;
 	}
-}
-
-@media (max-width: 1188px){
-	#services{
-		height: 1200px;
+	.cards-experience{
+		grid-template-columns: 1fr;
 	}
 }
 
 @media (max-width: 1144px){
-	#services{
-		height: 800px;
+	#experience{
+		height: 1200px;
 	}
 }
 
 @media (max-width: 793px){
-	#services{
+	#experience{
 		height: 1620px;
 	}
 	.services-tittle{

@@ -4,7 +4,7 @@
 	position: fixed;
 	display: flex;
 	justify-content: center;
-	z-index: 2;
+	z-index: 3;
 }
 
 nav ul li {
@@ -17,7 +17,8 @@ nav ul li a{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 100px;
+	text-align: center;
+	width: 165px;
 	height: 40px;
 	transition: all 0.3s ease-in-out;
 	font-size: 16px;
@@ -59,7 +60,7 @@ li a.active{
 }
 
 
-@media (max-width: 745px){
+@media (max-width: 1340px){
 	.button-check{
 		display: block;
 		margin-top: 8px;

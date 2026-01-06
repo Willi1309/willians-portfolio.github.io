@@ -1,0 +1,2 @@
+- [x] Add media queries to src/experience/trabajos/trabajos.css for responsive design (mobile: max-width 768px, tablet: max-width 1024px)
+- [x] Add media queries to src/experience/trabajos/slider/slider.css for responsive design (mobile: max-width 768px, tablet: max-width 1024px)

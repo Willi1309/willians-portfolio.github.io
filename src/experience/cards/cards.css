@@ -1,0 +1,89 @@
+.card-container {
+  /* Tamaño de la tarjeta (ajusta según necesites) */
+    width: 42rem;
+    height: 23rem;
+
+  /* Bordes redondeados y asegurar que el contenido no se salga */
+    border-radius: 24px;
+    overflow: hidden;
+
+  /* Sombra opcional para darle profundidad */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    position: relative;
+    margin: 18px;
+}
+
+/* La imagen de fondo real */
+.card-background-image {
+  width: 100%;
+  height: 100%;
+  /* Asegura que la imagen cubra todo el espacio sin deformarse */
+  background-size:cover;
+  background-position: center;
+  /* Posición absoluta para que quede detrás del contenido */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* El contenido superpuesto (overlay) */
+.card-overlay {
+  /* Ocupa todo el espacio sobre la imagen */
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+
+  /* IMPORTANTE: Capa oscura semitransparente para legibilidad */
+  background: rgba(0, 0, 0, 0.4);
+  /* Opcional: un degradado para que sea más oscuro abajo */
+  /* background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.6)); */
+
+  /* Usamos Flexbox para organizar el contenido interno */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Separa el botón (arriba) del texto (abajo) */
+  padding: 30px; /* Espacio interno */
+  box-sizing: border-box;
+}
+
+.top-icon {
+    display: inline-block;
+    background-color: var(--color-fondo);
+    color: var(--color-principal);
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 20px;
+    border-radius: 30px; 
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    align-self: flex-start;
+    cursor: pointer;
+    transition: transform 0.5s cubic-bezier(.22,1,.36,1), box-shadow 0.5s ease;
+}
+
+.top-icon:hover{
+    transform: scale(1.06);
+}
+
+/* Contenedor del texto inferior */
+.bottom-text-container {
+  color: white;
+  text-align: left;
+}
+
+.card-titulo {
+    font-size: 2rem;
+    margin: 0 0 10px 12px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card-subtitulo {
+    font-size: 1rem;
+    margin: 0;
+    opacity: 0.8;
+    font-family: 'Montserrat', sans-serif;
+}
