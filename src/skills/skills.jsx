@@ -24,8 +24,8 @@ export default function Skills ({my, skills}){
                     <h2 className='technology-tittle'>Frameworks</h2>
                     <div className='frontend-logos'>
                         <Icons logo={<IoLogoElectron/>} iconName={'Electron'} />
-                        <Icons logo={<FaAngular/>} iconName={'Angular'}/>
-                        <Icons logo={<SiSpringboot/>} iconName={'Spring Boot'}/>
+                        {/*<Icons logo={<FaAngular/>} iconName={'Angular'}/>
+                        <Icons logo={<SiSpringboot/>} iconName={'Spring Boot'}/>*/}
                     </div>
                 </div>
                 <div className='frontend'>
