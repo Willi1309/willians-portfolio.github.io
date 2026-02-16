@@ -18,12 +18,8 @@
 
 }
 
-.frontend{
-    margin: 0 28px 28px 28px
-}
-
-.backend{
-    margin: 28px;
+.tools{
+    margin-bottom: 28px;
 }
 
 .technology-tittle{
@@ -33,7 +29,7 @@
     margin: 18px;
     font-family: 'Poppins', sans-serif;
 }
-.frontend-logos, .backend-logos{
+.languages-logos, .frontend-logos, .backend-logos, .tools-logos, .frameworks-logos{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

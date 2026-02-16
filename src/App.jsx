@@ -42,13 +42,17 @@ function App() {
         service1={t("service1")}
         service2={t("service2")}
         service3={t("service3")}
-        text1={t("development")}
-        text2={t("data_bases")}
-        text3={t("design")}
+        service4={t("service4")}
+        text1={t("analysis")}
+        text2={t("development")}
+        text3={t("data_bases")}
+        text4={t("design")}
       />
       <Skills
         my={t("my")}
         skills={t("skills_title")}
+        languages={t("languages")}
+        tools={t("tools")}
       />
       <About
         about_me={t("about_me")}
