@@ -33,9 +33,6 @@ function App() {
       />
       <Experience
         experience_title={t("experience_title")}
-        see_more={t("see_more")}
-        system={t("system")}
-        app_desktop={t("app_desktop")}
       />
       <Services
         services_title={t("services_title")}

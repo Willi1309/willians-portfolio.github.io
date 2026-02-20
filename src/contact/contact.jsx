@@ -21,7 +21,7 @@ export default function Contact({contact_me, interested_text, interested_span, f
             <p className='interested-text'>{interested_text}<span>{interested_span}</span></p>
             <div className='contacts'>
                 <div className='whatsapp'>
-                    <a className="anchor-whatsapp" href='https://api.whatsapp.com/send?phone=584145707986&text=¡Hola!,%20estoy%20interesado%0en%20tus%20servicios'>
+                    <a className="anchor-whatsapp" href='https://api.whatsapp.com/send?phone=584145707986&text=¡Hola!,%20estoy%20interesado%20en%20tus%20servicios'>
                         <FaWhatsapp className='whatsappIcon'/>
                         <p>Whatsapp</p>
                     </a>
