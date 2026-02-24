@@ -1,6 +1,6 @@
 import Cards_Experience from './cards/cards'
 import Asoovinos from './png/asoovinos.png'
-import Sistemadeventas from './png/sistema_de_ventas2.png'
+import Sistemadeventas from './png/sistema_de_ventas1.png'
 import {useTranslation} from 'react-i18next'
 import './experience.css'
 

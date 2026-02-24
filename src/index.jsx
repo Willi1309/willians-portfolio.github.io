@@ -13,6 +13,7 @@ import asoovinos5 from './experience/png/asoovinos5.png'
 import asoovinos6 from './experience/png/asoovinos6.png'
 import asoovinos7 from './experience/png/asoovinos7.png'
 import asoovinos8 from './experience/png/asoovinos8.png'
+import sistema_de_ventas1 from './experience/png/sistema_de_ventas1.png'
 import sistema_de_ventas2 from './experience/png/sistema_de_ventas2.png'
 import sistema_de_ventas3 from './experience/png/sistema_de_ventas3.png'
 import sistema_de_ventas4 from './experience/png/sistema_de_ventas4.png'
@@ -20,6 +21,7 @@ import sistema_de_ventas5 from './experience/png/sistema_de_ventas5.png'
 import sistema_de_ventas6 from './experience/png/sistema_de_ventas6.png'
 import sistema_de_ventas8 from './experience/png/sistema_de_ventas8.png'
 import sistema_de_ventas9 from './experience/png/sistema_de_ventas9.png'
+import sistema_de_ventas10 from './experience/png/sistema_de_ventas10.png'
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import Trabajos from './experience/trabajos/trabajos';
@@ -66,7 +68,7 @@ function LogosSistemaVentas (){
 }
 
 const img_src_asoovinos = [asoovinos1, asoovinos2, asoovinos3, asoovinos4, asoovinos5, asoovinos6, asoovinos7, asoovinos8]
-const img_src_sv = [sistema_de_ventas2, sistema_de_ventas3, sistema_de_ventas4, sistema_de_ventas5, sistema_de_ventas6, sistema_de_ventas8, sistema_de_ventas9]
+const img_src_sv = [sistema_de_ventas1, sistema_de_ventas2, sistema_de_ventas3, sistema_de_ventas4, sistema_de_ventas5, sistema_de_ventas6, sistema_de_ventas8, sistema_de_ventas9, sistema_de_ventas10]
 
 const router = createBrowserRouter([
   {
