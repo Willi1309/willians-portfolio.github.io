@@ -29,7 +29,7 @@
     margin: 18px;
     font-family: 'Poppins', sans-serif;
 }
-.languages-logos, .frontend-logos, .backend-logos, .tools-logos, .frameworks-logos{
+.languages-logos, .frontend-logos, .backend-logos, .tools-logos, .frameworks-logos, .databases-logos{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

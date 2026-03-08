@@ -1,11 +1,12 @@
 import Icons from './icons/icons.jsx' 
-import { BiLogoHtml5, BiLogoCss3, BiLogoReact, BiLogoVisualStudio  } from 'react-icons/bi'
+import { BiLogoHtml5, BiLogoCss3, BiLogoReact  } from 'react-icons/bi'
 import { FaNode, FaJava, FaAngular, FaPython, FaGitAlt, FaFigma, FaGithub  } from "react-icons/fa";
-import { SiExpress, SiSqlite, SiMysql, SiPostgresql, SiTypescript, SiCplusplus, SiSpringboot, SiNextdotjs, SiAdobeillustrator } from "react-icons/si";
-import { IoLogoElectron, IoLogoFirebase  } from "react-icons/io5";
+import { SiExpress, SiSqlite, SiMysql, SiPostgresql, SiTypescript, SiCplusplus, SiSpringboot, SiNextdotjs, SiAdobeillustrator, SiNestjs  } from "react-icons/si";
+import { IoLogoElectron,  } from "react-icons/io5";
+import { RiSupabaseFill } from "react-icons/ri";
 import './skills.css'
 
-export default function Skills ({my, skills, languages, tools}){
+export default function Skills ({my, skills, languages, tools, databases}){
     return(<>
         <div id="skills">
             <div className='tittle-skills'>
@@ -27,6 +28,8 @@ export default function Skills ({my, skills, languages, tools}){
                         <Icons logo={<BiLogoHtml5/>} iconName={'HTML'} />
                         <Icons logo={<BiLogoCss3/>} iconName={'CSS'}/>
                         <Icons logo={<BiLogoReact/>} iconName={'React'}/>
+                        {/*<Icons logo={<FaAngular/>} iconName={'Angular'}/>*/}
+
                     </div>
                 </div>
                 <div className='backend'>
@@ -34,10 +37,8 @@ export default function Skills ({my, skills, languages, tools}){
                     <div className='backend-logos'>
                         <Icons logo={<SiExpress/>} iconName={'Express'}/>
                         <Icons logo={<FaNode/>} iconName={'Node.js'}/>
-                        <Icons logo={<SiMysql />} iconName={'MySQL'}/>
-                        <Icons logo={<SiSqlite/>} iconName={'SQLite'}/>
-                        <Icons logo={<SiPostgresql/>} iconName={'PostgreSQL'}/>
-                        <Icons logo={<IoLogoFirebase/>} iconName={'Firebase'}/>
+                        <Icons logo={<RiSupabaseFill />} iconName={'Supabase'}/>
+                        <Icons logo={<SiNestjs />} iconName={'Nest.js'}/>
                     </div>
                 </div>
                 <div className='frameworks'>
@@ -45,8 +46,15 @@ export default function Skills ({my, skills, languages, tools}){
                     <div className='frameworks-logos'>
                         <Icons logo={<IoLogoElectron/>} iconName={'Electron'} />
                         <Icons logo={<SiNextdotjs />} iconName={'Next.js'}/>
-                        {/*<Icons logo={<FaAngular/>} iconName={'Angular'}/>
-                        <Icons logo={<SiSpringboot/>} iconName={'Spring Boot'}/>*/}
+                        {/*<Icons logo={<SiSpringboot/>} iconName={'Spring Boot'}/>*/}
+                    </div>
+                </div>
+                <div className='databases'>
+                    <h2 className='technology-tittle'>{databases}</h2>
+                    <div className='databases-logos'>
+                        <Icons logo={<SiMysql />} iconName={'MySQL'}/>
+                        <Icons logo={<SiSqlite/>} iconName={'SQLite'}/>
+                        <Icons logo={<SiPostgresql/>} iconName={'PostgreSQL'}/>
                     </div>
                 </div>
                 <div className='tools'>

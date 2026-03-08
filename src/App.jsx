@@ -50,6 +50,7 @@ function App() {
         skills={t("skills_title")}
         languages={t("languages")}
         tools={t("tools")}
+        databases={t("databases")}
       />
       <About
         about_me={t("about_me")}
