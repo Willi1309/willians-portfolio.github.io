@@ -2,8 +2,10 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import { ContextProvider } from '../globalContext/globalContext';
 import { IoLogoElectron } from "react-icons/io5";
 import { SiSqlite } from "react-icons/si";
-import { BiLogoReact } from 'react-icons/bi'
-import { SiMysql, SiTypescript} from "react-icons/si";
+import { BiLogoReact, BiLogoPostgresql, BiLogoTypescript } from 'react-icons/bi'
+import { SiMysql, SiNestjs } from "react-icons/si";
+import { RiJavascriptFill } from "react-icons/ri";
+import { TbBrandNextjs } from "react-icons/tb";
 import { initReactI18next } from 'react-i18next';
 import asoovinos1 from './experience/png/asoovinos.png'
 import asoovinos2 from './experience/png/asoovinos2.png'
@@ -22,6 +24,10 @@ import sistema_de_ventas6 from './experience/png/sistema_de_ventas6.png'
 import sistema_de_ventas8 from './experience/png/sistema_de_ventas8.png'
 import sistema_de_ventas9 from './experience/png/sistema_de_ventas9.png'
 import sistema_de_ventas10 from './experience/png/sistema_de_ventas10.png'
+import ecommerce1 from './experience/png/ecommerce1.png'
+import ecommerce2 from './experience/png/ecommerce2.png'
+import ecommerce3 from './experience/png/ecommerce3.png'
+import ecommerce4 from './experience/png/ecommerce4.png'
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import Trabajos from './experience/trabajos/trabajos';
@@ -37,51 +43,68 @@ i18next.use(initReactI18next).init({
     escapeValue: false,
   },
   resources: {
-    es:{
+    es: {
       translation: es
     },
-    en:{
+    en: {
       translation: en
     }
   }
 });
 
-function LogosAsoovinos (){
+function LogosAsoovinos() {
   return (
     <div className="asoovinos-tec-icons">
-        <Icons logo={<IoLogoElectron/>} iconName={'Electron'} />
-        <Icons logo={<BiLogoReact/>} iconName={'React'}/>
-        <Icons logo={<SiSqlite/>} iconName={'SQLite'}/>
+      <Icons logo={<RiJavascriptFill />} iconName={'Javascript'} />
+      <Icons logo={<IoLogoElectron />} iconName={'Electron'} />
+      <Icons logo={<BiLogoReact />} iconName={'React'} />
+      <Icons logo={<SiSqlite />} iconName={'SQLite'} />
     </div>
   )
 }
 
-function LogosSistemaVentas (){
+function LogosSistemaVentas() {
   return (
     <div className="asoovinos-tec-icons">
-        <Icons logo={<SiTypescript/>} iconName={'TypeScript'}/>
-        <Icons logo={<IoLogoElectron/>} iconName={'Electron'} />
-        <Icons logo={<BiLogoReact/>} iconName={'React'}/>
-        <Icons logo={<SiMysql/>} iconName={'MySQL'}/>
+      <Icons logo={<BiLogoTypescript />} iconName={'TypeScript'} />
+      <Icons logo={<IoLogoElectron />} iconName={'Electron'} />
+      <Icons logo={<BiLogoReact />} iconName={'React'} />
+      <Icons logo={<SiMysql />} iconName={'MySQL'} />
+    </div>
+  )
+}
+
+function LogosEcommerce() {
+  return (
+    <div className="asoovinos-tec-icons">
+      <Icons logo={<BiLogoTypescript />} iconName={'TypeScript'} />
+      <Icons logo={<TbBrandNextjs />} iconName={'Next.JS'} />
+      <Icons logo={<SiNestjs />} iconName={'Nest.JS'} />
+      <Icons logo={<BiLogoPostgresql />} iconName={'PostgreSQL'} />
     </div>
   )
 }
 
 const img_src_asoovinos = [asoovinos1, asoovinos2, asoovinos3, asoovinos4, asoovinos5, asoovinos6, asoovinos7, asoovinos8]
 const img_src_sv = [sistema_de_ventas1, sistema_de_ventas2, sistema_de_ventas3, sistema_de_ventas4, sistema_de_ventas5, sistema_de_ventas6, sistema_de_ventas8, sistema_de_ventas9, sistema_de_ventas10]
+const img_src_ecommerce = [ecommerce1, ecommerce2, ecommerce3, ecommerce4]
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <App/>
+    element: <App />
   },
   {
     path: '/experience/asoovinos',
-    element: <Trabajos img_src={img_src_asoovinos} description_text='asoovinos' link='https://github.com/Willi1309/ASOOVINOS' logos={LogosAsoovinos()}/>
+    element: <Trabajos img_src={img_src_asoovinos} description_text='asoovinos' logos={LogosAsoovinos()} />
   },
   {
     path: '/experience/sistema_de_ventas',
-    element: <Trabajos img_src={img_src_sv} description_text='sistema_de_ventas' link='https://github.com/Willi1309/Sistema-de-Ventas' logos={LogosSistemaVentas()}/>
+    element: <Trabajos img_src={img_src_sv} description_text='sistema_de_ventas' logos={LogosSistemaVentas()} />
+  },
+  {
+    path: '/experience/ecommerce',
+    element: <Trabajos img_src={img_src_ecommerce} description_text='ecommerce' logos={LogosEcommerce()} />
   }
 ])
 
